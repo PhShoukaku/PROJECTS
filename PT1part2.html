@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .contact-form {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      resize: vertical;
+    }
+
+    .rotate-button {
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+      border: none;
+      background-color: #3498db; /* Default color */
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.6s ease, background-color 0.6s ease;
+      perspective: 1000px;
+    }
+
+    .rotate-button:hover {
+      transform: rotateX(180deg);
+      background-color: #2ecc71; /* Green on hover */
+    }
+  </style>
+</head>
+<body>
+
+  <form class="contact-form">
+    <h2>Message Us</h2>
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit" class="rotate-button">Send Message</button>
+  </form>
+
+</body>
+</html>

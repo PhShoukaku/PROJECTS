@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spinning Image</title>
+  <style>
+    /* Container for centering */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    /* Image styling and animation */
+    .spinning-image {
+      width: 150px;
+      height: 150px;
+      animation: spin 2s linear infinite;
+    }
+
+    /* Keyframes for spinning animation */
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.jBNBHROQnUf4neyYTXMLGAAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Spinning Image" class="spinning-image">
+  </div>
+</body>
+</html>
